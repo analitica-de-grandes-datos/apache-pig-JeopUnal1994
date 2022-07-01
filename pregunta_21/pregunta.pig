@@ -25,3 +25,4 @@ A = LOAD './data.csv' using PigStorage(',') AS (id:int,  name:chararray, lastnam
 B = FILTER A BY color matches 'blue|green' ;
 C = FOREACH B GENERATE name, color;
 STORE C INTO 'output/' using PigStorage(',');
+
