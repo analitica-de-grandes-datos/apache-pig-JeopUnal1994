@@ -24,3 +24,4 @@ B = FILTER A BY (NOT (color matches 'b.*'));
 C = FOREACH B GENERATE color;
 STORE C INTO 'output/' using PigStorage(',');
 
+
