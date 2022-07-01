@@ -27,4 +27,3 @@ C = FILTER B BY NOT (color  MATCHES '.*b.*');
 DUMP B;
 
 STORE C INTO 'output/' using PigStorage(',') ;
-
