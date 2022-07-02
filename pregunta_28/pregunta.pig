@@ -29,4 +29,3 @@ DUMP B;
 
 STORE B INTO 'output/' using PigStorage(',') ;
 
-
