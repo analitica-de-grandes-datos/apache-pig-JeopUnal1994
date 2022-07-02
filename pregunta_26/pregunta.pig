@@ -24,3 +24,4 @@ A = LOAD './data.csv' using PigStorage(',') AS (id:int,  name:chararray, lastnam
 B = FILTER A BY SUBSTRING(name,0,1) >= 'M';
 C = FOREACH B GENERATE name;
 STORE C INTO 'output/' using PigStorage(',');
+
