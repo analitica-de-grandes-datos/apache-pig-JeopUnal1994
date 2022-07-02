@@ -31,3 +31,4 @@ data_table = LOAD 'data.csv' USING PigStorage(',')
 
 specific_columns = FOREACH data_table GENERATE INDEXOF(firstname,'a');
 STORE specific_columns INTO 'output' USING PigStorage(',');
+
