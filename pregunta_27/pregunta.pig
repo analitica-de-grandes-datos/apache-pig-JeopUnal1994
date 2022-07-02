@@ -23,3 +23,4 @@ $ pig -x local -f pregunta.pig
 A = LOAD './data.csv' using PigStorage(',') AS (id:int,  name:chararray, lastname:chararray,   date:chararray,  color:chararray, other:int);
 B = FOREACH A GENERATE INDEXOF(name, 'ia');
 STORE B INTO 'output/' using PigStorage(',');
+
