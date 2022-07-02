@@ -34,3 +34,4 @@ specific_columns = FOREACH data_table GENERATE firstname, color;
 filter_rows = FILTER specific_columns BY color == 'blue' AND STARTSWITH(firstname,'Z');
 format_output = FOREACH filter_rows GENERATE CONCAT(firstname,' ',color);
 STORE format_output INTO 'output' USING PigStorage(',');
+
