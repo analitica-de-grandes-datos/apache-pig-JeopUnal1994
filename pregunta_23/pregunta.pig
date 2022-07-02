@@ -28,4 +28,3 @@ C = FILTER B BY (color matches '.*[aeiou]$');
 DUMP C;
 
 STORE C INTO 'output/' using PigStorage(',') ;
-
