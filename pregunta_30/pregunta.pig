@@ -60,6 +60,3 @@ J = FOREACH I  GENERATE $0,$2,$3, SUBSTRING($1, 0, 3),$1;
 
 STORE J  INTO 'output' USING PigStorage(',');
 
-
-
-
